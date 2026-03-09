@@ -9,46 +9,79 @@
 <header>
 <h1>Book Haven Bookstore</h1>
 <nav>
-<a href="index.html">Home</a> |
-<a href="gallery.html">Gallery</a> |
-<a href="about.html">About Us</a> |
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="about.html">About Us</a>
 <a href="events.html">Events</a>
 </nav>
 </header>
 
-<hr>
+<main>
+<section>
+<h2 class="section-title">About Book Haven</h2>
+<div class="two-column">
+<div>
+<p>Book Haven is a community bookstore dedicated to bringing readers together and promoting a love for literature. Our mission is to provide a welcoming space where people of all ages can discover books, attend events, and connect through stories.</p>
+<p>We focus on thoughtful book selections, friendly service, and community-centered experiences that make reading more accessible and enjoyable.</p>
+</div>
+<div>
+<div class="map-placeholder">Store Image / Map Placeholder</div>
+</div>
+</div>
+</section>
 
-<h2>About Us</h2>
+<section>
+<h2 class="section-title">Meet Our Team</h2>
+<div class="staff-grid">
+<div class="staff-card">
+<div class="staff-photo">Staff Image</div>
+<h3>Owner</h3>
+<p>Leads the bookstore and community partnerships.</p>
+</div>
+<div class="staff-card">
+<div class="staff-photo">Staff Image</div>
+<h3>Manager</h3>
+<p>Supports daily operations and customer service.</p>
+</div>
+<div class="staff-card">
+<div class="staff-photo">Staff Image</div>
+<h3>Events Coordinator</h3>
+<p>Plans readings, signings, and local book club events.</p>
+</div>
+</div>
+</section>
 
-<p>Book Haven is a community bookstore dedicated to bringing readers together and promoting a love for literature.</p>
-
-<h2>Contact Us</h2>
-
+<section>
+<h2 class="section-title">Contact Us / Custom Orders</h2>
 <form>
+<label for="name">Name</label>
+<input type="text" id="name" name="name">
 
-<label>Name:</label><br>
-<input type="text" name="name"><br><br>
+<label for="email">Email</label>
+<input type="email" id="email" name="email">
 
-<label>Email:</label><br>
-<input type="email" name="email"><br><br>
+<label for="phone">Phone</label>
+<input type="text" id="phone" name="phone">
 
-<label>Phone:</label><br>
-<input type="text" name="phone"><br><br>
+<label for="message">Feedback or Custom Order Details</label>
+<textarea id="message" name="message"></textarea>
 
-<label>Feedback / Custom Order:</label><br>
-<textarea rows="4" cols="40"></textarea><br><br>
+<div class="checkbox-row">
+<input type="checkbox" id="custom" name="custom">
+<label for="custom" style="display:inline;">This is a custom order request</label>
+</div>
 
-<input type="checkbox"> Custom Book Order<br><br>
-
-<input type="submit" value="Submit">
-<input type="reset" value="Clear">
-
+<div class="form-actions">
+<input type="submit" value="Submit" class="btn">
+<input type="reset" value="Clear Form" class="btn">
+</div>
 </form>
-
-<hr>
+</section>
+</main>
 
 <footer>
 <p>Book Haven Bookstore</p>
+<p>We would love to hear from you</p>
 </footer>
 
 </body>

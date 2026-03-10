@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Events - Book Haven</title>
-<link rel="stylesheet" href="styles.css">
+  <title>Events - Book Haven Bookstore</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header>
-<div class="logo-area">
-<img src="images/Client3_Logo.png" alt="Book Haven Bookstore Logo" class="logo">
-<h1>Book Haven Bookstore</h1>
-</div>
-<nav>
-<a href="index.html">Home</a>
-<a href="gallery.html">Gallery</a>
-<a href="about.html">About Us</a>
-<a href="events.html">Events</a>
-</nav>
-</header>
+  <header>
+    <div class="logo-area">
+      <img src="images/Client3_Logo.png" alt="Book Haven Bookstore Logo" class="logo">
+      <h1>Book Haven Bookstore</h1>
+    </div>
 
-<main>
-<section>
-<h2 class="section-title">Upcoming Events</h2>
-<div class="event-grid">
-<div class="event-card">
-<div class="event-image">Event Image</div>
-<h3>Author Reading</h3>
-<p>May 10</p>
-<button class="btn">RSVP</button>
-</div>
-<div class="event-card">
-<div class="event-image">Event Image</div>
-<h3>Book Signing</h3>
-<p>May 22</p>
-<button class="btn">RSVP</button>
-</div>
-<div class="event-card">
-<div class="event-image">Event Image</div>
-<h3>Community Book Club</h3>
-<p>June 5</p>
-<button class="btn">RSVP</button>
-</div>
-</div>
-</section>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Us</a>
+      <a href="events.html">Events</a>
+    </nav>
+  </header>
 
-<section>
-<h2 class="section-title">Community Involvement</h2>
-<p>Book Haven works closely with local schools, libraries, and reading programs to support literacy and community engagement. We regularly host events that encourage readers to connect, share ideas, and celebrate books together.</p>
-</section>
-</main>
+  <main>
 
-<footer>
-<p>Book Haven Bookstore</p>
-<p>Join our local reading community</p>
-</footer>
-<script src="script.js"></script>
+    <section>
+      <h2 class="section-title">Upcoming Events</h2>
+
+      <div class="event-grid">
+
+        <div class="event-card">
+          <div class="event-image">Event Image</div>
+          <h3>Author Reading</h3>
+          <p>May 10</p>
+          <button class="btn">RSVP</button>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image">Event Image</div>
+          <h3>Book Signing</h3>
+          <p>May 22</p>
+          <button class="btn">RSVP</button>
+        </div>
+
+        <div class="event-card">
+          <div class="event-image">Event Image</div>
+          <h3>Community Book Club</h3>
+          <p>June 5</p>
+          <button class="btn">RSVP</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Community Involvement</h2>
+      <p>
+        Book Haven works closely with local schools, libraries, and reading programs to support literacy
+        and community engagement. We regularly host events that encourage readers to connect, share ideas,
+        and celebrate books together.
+      </p>
+    </section>
+
+    <section class="newsletter">
+      <h2 class="section-title">Subscribe for Updates</h2>
+      <p>Get updates about upcoming events, new arrivals, and bookstore news.</p>
+
+      <form onsubmit="subscribeUser(event)">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Book Haven Bookstore</p>
+    <p>Join our local reading community</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

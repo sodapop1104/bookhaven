@@ -31,67 +31,72 @@
 
         <div class="gallery-item">
           <img src="images/Client3_Book1.png" alt="Book Haven Book 1 cover">
-          <h3>Brie Mine 4Ever</h3>
-          <p>A book for cheese lovers</p>
+          <h3>Book Haven Book 1</h3>
+          <p>Popular fiction title.</p>
           <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Book2.png" alt="Book Haven Book 2 cover">
-          <h3>Glory Riders</h3>
-          <p>A book about bikers</p>
+          <h3>Book Haven Book 2</h3>
+          <p>Bestselling novel.</p>
           <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Book3.png" alt="Book Haven Book 3 cover">
-          <h3>Sorcerer’s Shadowed Chronicles</h3>
-          <p>A fantasy book</p>
+          <h3>Book Haven Book 3</h3>
+          <p>Reader favorite.</p>
           <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Magazine1.png" alt="Book Haven Magazine issue 1">
-          <h3>Ball</h3>
-          <p>A magazine about pickleball</p>
+          <h3>Magazine Issue 1</h3>
+          <p>Monthly reading magazine.</p>
           <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Magazine2.png" alt="Book Haven Magazine issue 2">
-          <h3>Travel</h3>
-          <p>A magazine for travelers</p>
+          <h3>Magazine Issue 2</h3>
+          <p>Latest reading trends.</p>
           <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Magazine3.png" alt="Book Haven Magazine issue 3">
-          <h3>Eat</h3>
-          <p>A magazine for foodies</p>
+          <h3>Magazine Issue 3</h3>
+          <p>Featured book reviews.</p>
           <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Notebook.png" alt="Book Haven notebook">
           <h3>Book Haven Notebook</h3>
-          <p>A notebook with text on the cover that says <i>Book Haven Bookstore</i></p>
+          <p>Perfect for notes and journaling.</p>
           <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Stickers.png" alt="Book Haven stickers">
           <h3>Book Haven Stickers</h3>
-          <p>A set of four Book Haven Bookstore stickers that promote reading</p>
+          <p>Fun book-themed stickers.</p>
           <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_ToteBag.png" alt="Book Haven tote bag">
           <h3>Book Haven Tote Bag</h3>
-          <p>A canvas tote bag with black lettering that says <i>ALL I DO IS READ READ READ</i></p>
+          <p>Reusable bag for book lovers.</p>
           <button class="btn" onclick="addToCart()">Add to Cart</button>
         </div>
 
+      </div>
+
+      <div class="form-actions">
+        <button class="btn" onclick="clearCart()">Clear Cart</button>
+        <button class="btn" onclick="processOrder()">Process Order</button>
       </div>
     </section>
 
@@ -100,7 +105,14 @@
   <footer>
     <p>Book Haven Bookstore</p>
     <p>Browse our curated collection</p>
+
+    <form onsubmit="subscribeUser(event)">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
+
 </html>

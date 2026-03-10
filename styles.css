@@ -335,3 +335,29 @@ padding:18px;
 flex-direction:column;
 }
 }
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo{
+width:65px;
+height:auto;
+}
+
+header{
+background-color:#5c4033;
+color:white;
+padding:20px 30px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+header h1{
+font-family:Georgia, serif;
+font-size:1.8rem;
+}

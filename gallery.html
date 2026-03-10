@@ -27,76 +27,89 @@
 
       <h2 class="section-title">Book Haven Products</h2>
 
+      <div class="form-actions" style="margin-bottom: 20px;">
+        <button class="btn" onclick="viewCart()">View Cart</button>
+      </div>
+
       <div class="gallery-grid">
 
         <div class="gallery-item">
           <img src="images/Client3_Book1.png" alt="Brie Mine 4Ever book cover">
           <h3>Brie Mine 4Ever</h3>
           <p>A romantic comedy novel about a couple brought together by their love of cheese.</p>
-          <button class="btn" onclick="addToCart()">Add to Cart</button>
+          <button class="btn" onclick="addToCart('Brie Mine 4Ever')">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Book2.png" alt="Glory Riders book cover">
           <h3>Glory Riders</h3>
           <p>An action-packed story following a group of motorcycle riders across the country.</p>
-          <button class="btn" onclick="addToCart()">Add to Cart</button>
+          <button class="btn" onclick="addToCart('Glory Riders')">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Book3.png" alt="Sorcerer's Shadowed Chronicles book cover">
           <h3>Sorcerer&rsquo;s Shadowed Chronicles</h3>
           <p>A fantasy adventure about magic, destiny, and an ancient prophecy.</p>
-          <button class="btn" onclick="addToCart()">Add to Cart</button>
+          <button class="btn" onclick="addToCart('Sorcerer’s Shadowed Chronicles')">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Magazine1.png" alt="Ball magazine cover">
           <h3>Ball</h3>
           <p>A sports magazine focused on the fast-growing sport of pickleball.</p>
-          <button class="btn" onclick="addToCart()">Add to Cart</button>
+          <button class="btn" onclick="addToCart('Ball')">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Magazine2.png" alt="Travel magazine cover">
           <h3>Travel</h3>
           <p>A magazine for travelers featuring destinations, guides, and travel tips.</p>
-          <button class="btn" onclick="addToCart()">Add to Cart</button>
+          <button class="btn" onclick="addToCart('Travel')">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Magazine3.png" alt="Eat magazine cover">
           <h3>Eat</h3>
           <p>A food magazine featuring recipes, restaurant highlights, and culinary trends.</p>
-          <button class="btn" onclick="addToCart()">Add to Cart</button>
+          <button class="btn" onclick="addToCart('Eat')">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Notebook.png" alt="Book Haven notebook">
           <h3>Book Haven Notebook</h3>
           <p>A notebook with the phrase <i>Book Haven Bookstore</i> printed on the cover.</p>
-          <button class="btn" onclick="addToCart()">Add to Cart</button>
+          <button class="btn" onclick="addToCart('Book Haven Notebook')">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_Stickers.png" alt="Book Haven stickers">
           <h3>Book Haven Stickers</h3>
           <p>A set of four stickers designed to promote reading and support the bookstore.</p>
-          <button class="btn" onclick="addToCart()">Add to Cart</button>
+          <button class="btn" onclick="addToCart('Book Haven Stickers')">Add to Cart</button>
         </div>
 
         <div class="gallery-item">
           <img src="images/Client3_ToteBag.png" alt="Book Haven tote bag">
           <h3>Book Haven Tote Bag</h3>
           <p>A canvas tote bag with the phrase <i>ALL I DO IS READ READ READ</i>.</p>
-          <button class="btn" onclick="addToCart()">Add to Cart</button>
+          <button class="btn" onclick="addToCart('Book Haven Tote Bag')">Add to Cart</button>
         </div>
 
       </div>
 
-      <div class="form-actions">
-        <button class="btn" onclick="clearCart()">Clear Cart</button>
-        <button class="btn" onclick="processOrder()">Process Order</button>
+      <!-- Cart Modal -->
+      <div id="cartModal" class="cart-modal" style="display:none;">
+        <div class="cart-modal-content">
+          <h2 class="section-title">Shopping Cart</h2>
+          <div id="cartOutput"></div>
+
+          <div class="form-actions">
+            <button class="btn" onclick="clearCart()">Clear Cart</button>
+            <button class="btn" onclick="processOrder()">Process Order</button>
+            <button class="btn" onclick="closeCart()">Close</button>
+          </div>
+        </div>
       </div>
 
     </section>
